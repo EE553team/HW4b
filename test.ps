@@ -1,0 +1,38 @@
+%BoudingBox: 0 0 800 800
+0 0 moveto
+300 400 lineto
+stroke
+100 100 moveto 200 100 lineto 200 200 lineto 100 200 lineto closepath 
+0 0 0 setrgbcolor 4 setlinewidth stroke
+100 100 moveto 200 100 lineto 200 200 lineto 100 200 lineto closepath 
+255 0 0 setrgbcolor fill
+200 200 moveto
+300 200 lineto
+250 300 lineto
+200 200 lineto
+closepath
+0 50 50 setrgbcolor
+4 setlinewidth
+stroke
+200 200 moveto
+300 200 lineto
+250 300 lineto
+200 200 lineto
+closepath
+50 50 0 setrgbcolor
+fill
+100 100 255 0 360 arc
+0 50 50 setrgbcolor
+4 setlinewidth
+stroke
+/Courier 20 selectfont 100 100 moveto (testing testing 123) show
+/vline {300 400 moveto 300 700 lineto stroke} def
+gsave
+vline
+4 {50 0 translate vline} repeat
+grestore
+/hline {300 400 moveto 500 400 lineto stroke} def
+gsave
+hline
+6 {0 50 translate hline} repeat
+grestore
